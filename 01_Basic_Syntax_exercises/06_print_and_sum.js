@@ -1,24 +1,14 @@
-function printSum(first_number, second_number){
-    total_sum = 0
-    string_numbers = ""
+function printSum(first_number, second_number) {
+    let total_sum = 0;
+    const numbers_string = [];
 
-    counter = 1
-
-    for(let i = first_number; i <= second_number; i++){
-        if(counter === 1){
-            string_numbers += `${i}`
-        }
-        else {
-            string_numbers += ` ${i}`
-        }
-
-        total_sum += i
-        counter++
+    for (let i = first_number; i <= second_number; i++) {
+        numbers_string.push(i);
+        total_sum += i;
     }
 
-    console.log(string_numbers);
-
+    console.log(numbers_string.join(' '));
     console.log(`Sum: ${total_sum}`);
-    
 }
-printSum(5, 10)
+
+printSum(5, 10);
