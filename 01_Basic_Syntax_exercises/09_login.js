@@ -19,9 +19,6 @@ function login(passwordList){
         else {
             console.log("Incorrect password. Try again.");
         }
-
-
-
     }
 }
 
