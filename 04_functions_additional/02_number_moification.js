@@ -14,7 +14,7 @@ function modifyNumber(number){
         }
         else {
             numberString += '9'
-        }
+        }  
     }
     
     console.log(numberString);

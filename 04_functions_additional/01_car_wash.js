@@ -14,7 +14,7 @@ function cleanCar(commandsArray){
         else if(command === 'mud'){
             carClean -= carClean * 0.1
         }
-    }
+    } 
 
     console.log(`The car is ${carClean.toFixed(2)}% clean.`);
     
