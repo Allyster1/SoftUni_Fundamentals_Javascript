@@ -11,7 +11,5 @@ function factorial(first, second) {
 
     let result = firstFactorial / secondFactorial
     console.log(result.toFixed(2));
-    
-
 }
 factorial(5, 2)
