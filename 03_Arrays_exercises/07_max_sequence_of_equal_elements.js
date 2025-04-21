@@ -27,7 +27,5 @@ function findMaxSequence(array) {
     console.log(result);
 }
 
-// Test cases
-findMaxSequence([2, 1, 1, 2, 3, 3, 2, 2, 2, 1]); // Output: 2 2 2
-findMaxSequence([1, 1, 1, 2, 3, 1, 3, 3]);       // Output: 1 1 1
-findMaxSequence([4
+findMaxSequence([2, 1, 1, 2, 3, 3, 2, 2, 2, 1]);
+findMaxSequence([1, 1, 1, 2, 3, 1, 3, 3]);
