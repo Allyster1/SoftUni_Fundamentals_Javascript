@@ -1,5 +1,5 @@
-const calculate = (numOne, numTwo, operator) => {
-    const operations = {
+let calculate = (numOne, numTwo, operator) => {
+    let operations = {
         multiply: (a, b) => a * b,
         divide: (a, b) => a / b,
         add: (a, b) => a + b,
@@ -7,3 +7,5 @@ const calculate = (numOne, numTwo, operator) => {
     };
     console.log(operations[operator](numOne, numTwo));
 };
+
+calculate(5, 10, 'multiply')
