@@ -1,10 +1,8 @@
-function calculateDuration(bandName, albumName, songName) {
-    return (albumName.length * bandName.length) * songName.length / 2;
-}
+
 
 function printFullDuration(band, album, song) {
     const rotationTime = 2.5;
-    const durationInSeconds = calculateDuration(band, album, song);
+    const durationInSeconds = (album.length * band.length) * song.length / 2;
     const rotations = Math.ceil(durationInSeconds / rotationTime);
     console.log(`The plate was rotated ${rotations} times.`);
 }

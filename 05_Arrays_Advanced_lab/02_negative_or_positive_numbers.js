@@ -7,9 +7,9 @@ function printNumbers(array){
         filteredArray.push(0)
     }
 
-    for (let element of numbersArray) {
+    for (let element of filteredArray) {
         console.log(element)
     }
 }
-// printNumbers(['7', '-2', '8', '9'])
-printNumbers(['3', '-2', '0', '-1'])
+printNumbers(['7', '-2', '8', '9'])
+// printNumbers(['3', '-2', '0', '-1'])
