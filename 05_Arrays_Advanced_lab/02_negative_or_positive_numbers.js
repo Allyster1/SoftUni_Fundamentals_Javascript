@@ -1,15 +1,20 @@
 function printNumbers(array){
-    let numbersArray = array.map((x) => Number(x)).sort()
-    let filteredArray = numbersArray.filter(zero => zero !== 0)
 
-    
-    if(array.includes('0')){
-        filteredArray.push(0)
+   const result = array.reduce((result, element) => {
+    let indexElement = array.indexOf(element)
+
+    if(array[indexElement] < 0){
+        result.unshift(element)
+    } 
+    else {
+        result.push(element)
     }
 
-    for (let element of filteredArray) {
-        console.log(element)
-    }
+    return result
+   }, [])
+
+   console.log(result.join("\n"))
+
 }
-printNumbers(['7', '-2', '8', '9'])
-// printNumbers(['3', '-2', '0', '-1'])
+//printNumbers(['7', '-2', '8', '9'])
+printNumbers(['3', '-2', '0', '-1'])
