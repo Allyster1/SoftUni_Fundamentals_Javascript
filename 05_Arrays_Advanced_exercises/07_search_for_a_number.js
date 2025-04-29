@@ -11,10 +11,6 @@ function findOccurances(array, numbersToFind) {
         }
     }
 
-    // for (const element of updatedArray) {
-    //     counter++
-    // }
-
     console.log(`Number ${searchElement} occurs ${counter} times.`)
 }
 
